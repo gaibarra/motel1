@@ -1,0 +1,43 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Define your custom styles here */
+
+/* Example: Different colors for room status */
+.room-ready {
+  @apply bg-green-500;
+}
+
+.room-occupied {
+  @apply bg-red-500;
+}
+
+.room-cleaning {
+  @apply bg-yellow-500;
+}
+
+.room-maintenance {
+  @apply bg-blue-500;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1001;
+}

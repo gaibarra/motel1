@@ -1,0 +1,79 @@
+/* Movements.module.css */
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalBackdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.modalContent {
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  padding: 16px;
+  z-index: 1001;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.closeButton {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.movementsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.movementsTable th, .movementsTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.movementsTable th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.movementsScrollable {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.error {
+  color: red;
+  margin-top: 8px;
+}
+
+.boldBlueText {
+  font-weight: bold;
+  color: blue;
+}
